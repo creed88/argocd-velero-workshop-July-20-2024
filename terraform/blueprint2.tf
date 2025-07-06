@@ -40,9 +40,9 @@ module "eks_cluster" {
       public_subnets             = module.vpc.public_subnets
       subnet_ids                 = module.vpc.private_subnets
       min_size                   = 2
-      max_size                   = 5
+      max_size                   = 4
       desired_size               = 2
-      instance_types             = ["t2.large"]
+      instance_types             = ["t2.medium"]
       capacity_type              = "ON_DEMAND"
       iam_role_name              = "${var.cluster_name}-node-role"
       iam_role_use_name_prefix   = false

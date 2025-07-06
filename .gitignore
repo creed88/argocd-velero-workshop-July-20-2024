@@ -1,0 +1,17 @@
+# Terraform files
+terraform.tfstate
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# Other common exclusions (optional, based on your project)
+.DS_Store
+*.log
+node_modules/
+.env
+*.bak
+*.swp
