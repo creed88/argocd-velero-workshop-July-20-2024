@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: docker.io/library/nginx:1.17
+      - image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
         imagePullPolicy: Always
         name: guestbook-ui
         ports:
